@@ -1,0 +1,26 @@
+name: NuCore
+main: me.stashcat.NuCore.Main
+version: 0.1
+description: Powerful plugin core enabling developers to write good, fast and reliable code.
+author: StashCat
+website: http://stashcat.me/
+database: false
+prefix: NC
+commands:
+   nucore:
+      description: NuCore main command.
+      usage: /nucore
+      aliases: [ncore]
+      permission: nucore.cmd
+      permission-message: Insufficient permission to execute this command.
+      default: true
+permissions:
+   nucore.cmd:
+     description: Allows you to use the /nucore command.
+     default: false
+
+   nucore.*:
+     description: Allows you to use all NuCore commands and features.
+     default: op
+     children:
+      nucore.cmd: true
