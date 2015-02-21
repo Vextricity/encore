@@ -1,4 +1,4 @@
-package me.stashcat.NuCore;
+package me.stashcat.enCore;
 
 import java.util.Arrays;
 import java.util.List;
